@@ -19,7 +19,12 @@ def test_limites():
     assert f.puissance(0, 5) == 0
     assert f.puissance(5, 0) == 1
 
-# Q4.6 : Test de l'exception pour le cas indéfini
+# Q6.3 (et Q4.6) : Test de l'exception pour le cas indéfini
 def test_exc_zero_negatif():
     with pytest.raises(Exception):
         f.puissance(0, -1)
+
+# Q6.3 : Test de l'exception de type (flottant au lieu d'entier)
+def test_exc_type():
+    with pytest.raises(TypeError):
+        f.puissance(2.5, 3)
