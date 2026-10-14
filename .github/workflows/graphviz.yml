@@ -14,3 +14,9 @@ jobs:
         run: |
           chmod +x ./run1.sh
           ./run1.sh g1
+
+      - name: upload du resultat
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendu-g1
+          path: g1.svg
