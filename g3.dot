@@ -1,0 +1,25 @@
+graph {
+    A [pos="10,5!"];
+    B [pos="7,7.5!"];
+    C [pos="7,4!"];
+    D [pos="4,4!"];
+    E [pos="4.8,1!"];
+    F [pos="1,2!"];
+    G [pos="1.5,5.5!"];
+    H [pos="4,8!"];
+
+    B -- G [label="4"];
+    H -- B [label="2"];
+    H -- G [label="14"];
+    B -- A [label="1"];
+    B -- C [label="2"];
+    B -- D [label="9"];
+    A -- C [label="4"];
+    C -- D [label="1"];
+    C -- E [label="3"];
+    G -- D [label="1"];
+    G -- F [label="6"];
+    D -- F [label="3"];
+    D -- E [label="1"];
+    F -- E [label="1"];
+}
